@@ -192,7 +192,7 @@ const googleCallback = async (req, res, next) => {
  const startGoogleAuth = (req, res) => {
   const params = new URLSearchParams({
     client_id: process.env.GOOGLE_CLIENT_ID,
-    redirect_uri: "http://localhost:5000/api/auth/google/callback",
+     redirect_uri: `${process.env.BACKEND_URL}/api/auth/google/callback`,
     response_type: "id_token",
     scope: "openid email profile",
     nonce: Date.now().toString(),

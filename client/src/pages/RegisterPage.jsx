@@ -342,7 +342,7 @@ export default function RegisterPage() {
             /> */}
 
                   <a
-  href="http://localhost:5000/api/auth/google"
+  href={`${import.meta.env.VITE_SERVER_URL}/api/auth/google`}
   className="
     flex h-14 w-full items-center justify-center gap-3
     rounded-2xl

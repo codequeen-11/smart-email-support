@@ -1,5 +1,5 @@
 
-const API_URL = "http://localhost:5000/api/tickets";
+const API_URL = `${import.meta.env.VITE_API_URL}/tickets`;
 
 export async function getTickets() {
   const response = await fetch(API_URL);
