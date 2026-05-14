@@ -3,7 +3,7 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const { OAuth2Client } = require("google-auth-library");
  
-const frontendUrl = process.env.FRONTEND_URL || "http://localhost:5173";
+const frontendUrl = process.env.FRONTEND_URL;
 
 const generateToken = (id) => {
   return jwt.sign({ id }, process.env.JWT_SECRET, {
